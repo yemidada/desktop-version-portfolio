@@ -68,14 +68,6 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ### Prerequisites
 
-In order to run this project you need:
-
--Node JS
-<br>
--An IDE (Intergrated Development Environment) such vscode, atom etc ...
-<br>
--web browser such as chrome, firefox etc ..
-
 On MAC, by using [Homebrew](https://brew.sh/) you can install.
 
 ```bash

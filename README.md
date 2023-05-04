@@ -64,7 +64,7 @@ The various stacks used for the project includes the following
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-To get a local copy up and running, follow these steps.
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer.
 
 ### Prerequisites
 
@@ -81,12 +81,17 @@ brew install node
 
 Clone this repository to your desired folder:
 
-git clone https://github.com/yemidada/desktop-version-portfolio.git
+```bash
+# Clone this repository
+$ git clone https://github.com/yemidada/desktop-version-portfolio.git
 
-cd desktop-version-portfolio
+# Go into the repository
+$ cd desktop-version-portfolio
 
-npm install
+# Install dependencies
+$ npm install
 
+```
 
 ### Usage
 

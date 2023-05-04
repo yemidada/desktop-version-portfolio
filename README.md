@@ -73,9 +73,15 @@ In order to run this project you need:
 
 on MAC:
 
+```bash
+# install git
+$ brew install git
+```
 
-
-brew install node
+```bash
+# install node
+$ brew install node
+```
 
 ### Setup
 

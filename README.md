@@ -69,7 +69,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 ### Prerequisites
 From your command line:
 
-On MAC, by using [Homebrew](https://brew.sh/) you can install.
+On macOS, by using [Homebrew](https://brew.sh/) you can install.
 
 ```bash
 # install git

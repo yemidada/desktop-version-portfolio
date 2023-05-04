@@ -217,7 +217,6 @@ nav {
   width: 11rem;
 }
 
-
 .tonic {
   display: grid;
   grid-template-columns: 0.2fr 0.6fr;
@@ -334,7 +333,6 @@ nav {
   margin-bottom: 20px;
 }
 
-
 input,
 textarea {
   padding: 15px;
@@ -432,7 +430,6 @@ textarea {
     line-height: 16px;
   }
 
-
   .about {
     padding: 5rem 3rem 12rem 3rem;
   }
@@ -445,7 +442,6 @@ textarea {
   .about .casualose {
     padding: 0;
   }
-
 
   .footer {
     padding: 102px 12px 48px 24px;
@@ -480,9 +476,6 @@ textarea {
     width: 100%;
   }
 }
-
-
-
 
 @media all and (min-width: 768px) {
   .is_mobile {
@@ -542,7 +535,6 @@ textarea {
     margin: 2rem;
     padding: 1.5rem;
     grid-template-columns: auto auto;
-
   }
 
   .content {
@@ -576,7 +568,6 @@ textarea {
     width: 665px;
     padding: 0 2rem;
   }
-
 
   .footer::before {
     background-image: url("../images/footer_desktop.svg");

@@ -121,10 +121,6 @@ nav {
   color: white;
 }
 
-/*
-  tag
-*/
-
 .tag_button {
   padding-left: 12px;
   padding-right: 12px;
@@ -143,8 +139,6 @@ nav {
   line-height: 16px;
   color: rgb(96, 112, 255);
 }
-
-/* Menu Style */
 
 .menu {
   display: flex;
@@ -173,9 +167,6 @@ nav {
   display: none;
 }
 
-/*
-  heading styles
-*/
 .heading::before {
   content: "";
   position: absolute;
@@ -226,20 +217,15 @@ nav {
   width: 11rem;
 }
 
-/*
- Tonic style
-*/
+
 .tonic {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 0.2fr 0.6fr;
   background-color: #fff;
   border-radius: 24px;
   border: solid 1px rgb(223, 225, 230);
   align-content: flex-start;
 }
-
-/* .tonic .image {
-} */
 
 .content .title {
   font-weight: 700;
@@ -285,9 +271,6 @@ nav {
   padding-right: 5px;
 }
 
-/*
-  about styles
-*/
 .about {
   background-color: #fff;
   display: flex;
@@ -317,19 +300,6 @@ nav {
   line-height: 24px;
   color: rgb(52, 69, 99);
 }
-
-/*
-  footer styles
-*/
-
-/* .footer::before {
-  content: "";
-  position: absolute;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-} */
 
 .footer {
   flex-direction: column;
@@ -364,9 +334,6 @@ nav {
   margin-bottom: 20px;
 }
 
-/*
-  input
-*/
 
 input,
 textarea {
@@ -390,7 +357,6 @@ textarea {
   padding-top: 12px;
 }
 
-/* Mobile */
 @media all and (min-width: 375px) {
   .is_mobile {
     display: block;
@@ -437,9 +403,6 @@ textarea {
     line-height: 24px;
   }
 
-  /*
-    tonic
-  */
   .tonic {
     margin: 2rem;
     padding: 1.5rem;
@@ -469,9 +432,7 @@ textarea {
     line-height: 16px;
   }
 
-  /*
-    about styles
-  */
+
   .about {
     padding: 5rem 3rem 12rem 3rem;
   }
@@ -485,9 +446,6 @@ textarea {
     padding: 0;
   }
 
-  /*
-    footer styles
-  */
 
   .footer {
     padding: 102px 12px 48px 24px;
@@ -523,7 +481,9 @@ textarea {
   }
 }
 
-/* Desktop */
+
+
+
 @media all and (min-width: 768px) {
   .is_mobile {
     display: none;
@@ -579,13 +539,10 @@ textarea {
   }
 
   .tonic {
+    margin: 2rem;
     padding: 1.5rem;
-    margin: 7rem;
     grid-template-columns: auto auto;
-  }
 
-  .tonic img {
-    width: auto;
   }
 
   .content {
@@ -607,9 +564,6 @@ textarea {
     line-height: 24px;
   }
 
-  /*
-    About section
-  */
   .about {
     padding: 8rem;
   }
@@ -623,9 +577,7 @@ textarea {
     padding: 0 2rem;
   }
 
-  /*
-    Footer section
-  */
+
   .footer::before {
     background-image: url("../images/footer_desktop.svg");
     background-size: cover;
@@ -664,5 +616,20 @@ textarea {
   input,
   textarea {
     width: 447px;
+  }
+}
+
+@media (min-width: 992px) {
+  .tonic {
+    margin: 2rem;
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tonic {
+    padding: 1.5rem;
+    margin: 7rem;
+    grid-template-columns: auto auto;
   }
 }

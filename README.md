@@ -87,6 +87,7 @@ https://github.com/yemidada/desktop-version-portfolio
 
 To run the project, execute the following command:
 
+Open the index.html with your browser
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

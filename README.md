@@ -119,9 +119,9 @@ $ npm install
 
 ### Usage
 
-To run the project, execute the following command:
+After you clone this repo to your desktop, go to its root directory and run `npm install` to install its dependencies.
 
-Open the index.html with your browser
+Once the dependencies are installed, you can open the `index.html` with your browser
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -15,10 +15,7 @@
     - [Key Features](#key-features)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
-  - [Install](#install)
   - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -76,18 +73,13 @@ In order to run this project you need:
 
 on MAC:
 
-
+npm install
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-### Install
-
-Install this project with:
-
-
-Example command:
+https://github.com/yemidada/desktop-version-portfolio
 
 
 
@@ -95,15 +87,6 @@ Example command:
 
 To run the project, execute the following command:
 
-
-### Run tests
-
-To run tests, run the following command:
-
-
-### Deployment
-
-You can deploy this project using:
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -149,7 +132,7 @@ If you like this project you can support us  by sharing our code
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Thanks you for checking out my repository
+Thanks you microverse for the opinion to opportunity
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

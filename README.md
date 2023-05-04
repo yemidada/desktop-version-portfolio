@@ -82,7 +82,9 @@ brew install node
 Clone this repository to your desired folder:
 
 git clone https://github.com/yemidada/desktop-version-portfolio.git
+
 cd desktop-version-portfolio
+
 npm install
 
 

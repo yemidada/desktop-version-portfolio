@@ -78,7 +78,7 @@ In order to run this project you need:
 <br>
 -web browser such as chrome, firefox etc ..
 
-On MAC, you can install
+On MAC, by using [Homebrew](https://brew.sh/) you can install.
 
 ```bash
 # install git

@@ -70,8 +70,6 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 In order to run this project you need:
 
--A Git hub account
-<br>
 -Node JS
 <br>
 -An IDE (Intergrated Development Environment) such vscode, atom etc ...

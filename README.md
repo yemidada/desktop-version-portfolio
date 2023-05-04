@@ -73,6 +73,8 @@ In order to run this project you need:
 
 on MAC:
 
+git clone https://github.com/yemidada/desktop-version-portfolio.git
+cd desktop-version-portfolio
 npm install
 
 ### Setup

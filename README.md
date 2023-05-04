@@ -90,6 +90,19 @@ $ brew install git
 $ brew install node
 ```
 
+On Windows, by using [chocolatey](https://chocolatey.org) you can install.
+
+```bash
+# install git
+C:\> choco install git
+```
+
+
+```bash
+# install node
+C:\> choco install node
+```
+
 ### Setup
 
 Clone this repository to your desired folder:

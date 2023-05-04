@@ -67,6 +67,7 @@ The various stacks used for the project includes the following
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer.
 
 ### Prerequisites
+From your command line:
 
 On MAC, by using [Homebrew](https://brew.sh/) you can install.
 

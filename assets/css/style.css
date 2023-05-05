@@ -499,15 +499,7 @@ textarea {
   }
 }
 
-@media all and (min-width: 1024px) {
-  .is_mobile {
-    display: none;
-  }
-
-  .is_desktop {
-    display: block;
-  }
-
+@media all and (min-width: 768px) {
   .menu {
     align-items: flex-start;
     flex-wrap: nowrap;
@@ -528,6 +520,16 @@ textarea {
 
   .mobile-menu {
     display: none;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .is_mobile {
+    display: none;
+  }
+
+  .is_desktop {
+    display: block;
   }
 
   .heading::before {

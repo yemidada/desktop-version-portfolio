@@ -231,6 +231,11 @@ nav {
   align-content: flex-start;
 }
 
+.tonic:hover {
+  box-shadow: 0 48px 48px rgba(37.12, 47.22, 137.06, 0.08);
+  border: solid 1px rgb(96, 112, 255);
+}
+
 .content .title {
   font-weight: 700;
   color: #091e42;

@@ -59,11 +59,12 @@ ul {
 
 nav {
   background-color: #fff;
-  position: sticky;
+  /* position: sticky;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 100; */
+  /* box-shadow: 0 0 16px rgba(64, 83, 252, 0.24); */
 }
 
 .logo {
@@ -279,12 +280,8 @@ nav {
   background-color: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  /* padding: 8rem ; */
   margin-bottom: -50px;
-}
-
-.about .info .button-outline {
-  margin-top: 0.5rem;
-  margin-bottom: 1.5rem;
 }
 
 .about .casualose .border-bottom {
@@ -304,16 +301,6 @@ nav {
   font-weight: 500;
   line-height: 24px;
   color: rgb(52, 69, 99);
-}
-
-.about .casualose .language li {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  border-radius: 8px;
-  margin: 10px 0;
-  padding: 12px 8px;
-  background: #f7f7f9;
 }
 
 .footer {
@@ -448,7 +435,13 @@ textarea {
 
   .about {
     padding: 3rem;
+    /* padding: 5rem 3rem 12rem 3rem; */
     grid-template-columns: none;
+  }
+
+  .about .info .button-outline {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .about .info,
@@ -492,6 +485,12 @@ textarea {
   textarea {
     width: 100%;
   }
+}
+
+@media all and (min-width: 768px) {
+  /* .heading {
+    padding: 8rem;
+  } */
 }
 
 @media all and (min-width: 1024px) {
@@ -549,8 +548,10 @@ textarea {
   }
 
   .tonic {
-    margin: 2rem;
+    /* margin: 2rem;
+    padding: 1.5rem; */
     padding: 1.5rem;
+    margin: 5rem;
     grid-template-columns: 1fr 1fr;
   }
 
@@ -574,29 +575,19 @@ textarea {
   }
 
   .about {
-    padding-bottom: 8rem;
+    padding: 8rem 8rem 12rem 8rem;
     grid-template-columns: 1fr 1fr;
   }
 
   .about .info {
-    width: 100%;
+    width: 443px;
   }
+
+
 
   .about .casualose {
-    width: 100%;
+    /* width: 665px; */
     padding: 0 2rem;
-  }
-
-  .about .casualose .language {
-    display: flex;
-    -moz-column-gap: 12px;
-    column-gap: 12px;
-  }
-
-  .about .casualose .language li {
-    flex-direction: column;
-    align-items: flex-start;
-    flex-basis: 6.6rem;
   }
 
   .footer::before {
@@ -648,9 +639,5 @@ textarea {
   .tonic {
     margin: 7rem;
     grid-template-columns: 1fr 1fr;
-  }
-
-  .about {
-    padding: 8rem 8rem 12rem 8rem;
   }
 }

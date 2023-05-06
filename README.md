@@ -2,7 +2,7 @@
 
 
 <div align="center">
-  <h3><b>Portfolio: desktop version</b></h3>
+  <h3><b>Portfolio: Animation Design</b></h3>
 
 </div>
 
@@ -25,7 +25,7 @@
 - [📝 License](#license)
 
 
-# 📖 Portfolio: desktop version <a name="about-project"></a>
+# 📖 Portfolio: Animation Design <a name="about-project"></a>
 
 **For this project, I established a repository for my portfolio website. My objective is to develop a complete portfolio website that is responsive on both mobile and web platform.**
 

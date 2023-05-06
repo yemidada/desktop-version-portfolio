@@ -118,12 +118,35 @@ nav {
   text-align: center;
   color: rgb(96, 112, 255);
   background: #fff;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  transition: background 0.8s ease-in-out, color 0.8s ease-in-out;
 }
 
 .button-outline:hover {
   background-color: rgb(34, 48, 210);
   border-color: rgb(34, 48, 210);
   color: white;
+  -webkit-animation-name: button-outline-hover;
+  animation-name: button-outline-hover;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+@-webkit-keyframes button-outline-hover {
+  100% {
+    box-shadow: inset 11rem 0 0 0 rgb(34, 48, 210), 0 8px 16px rgba(64, 83, 252, 0.24);
+    color: #fff;
+  }
+}
+
+@keyframes button-outline-hover {
+  100% {
+    box-shadow: inset 11rem 0 0 0 rgb(34, 48, 210), 0 8px 16px rgba(64, 83, 252, 0.24);
+    color: #fff;
+  }
 }
 
 .tag_button {
@@ -234,6 +257,22 @@ nav {
 .tonic:hover {
   box-shadow: 0 48px 48px rgba(37.12, 47.22, 137.06, 0.08);
   border: solid 1px rgb(96, 112, 255);
+}
+
+.tonic .image {
+  -webkit-transition: all 800ms ease;
+  -moz-transition: all 800 ease;
+  -o-transition: all 800ms ease;
+  -ms-transition: all 800ms ease;
+  transition: all 800ms ease;
+}
+
+.tonic .image:hover {
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: cale(0.9);
 }
 
 .content .title {

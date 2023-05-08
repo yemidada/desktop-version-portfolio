@@ -114,6 +114,10 @@ $ npm install
 
 After you clone this repo to your desktop, go to its root directory and run `npm install` to install its dependencies.
 
+### Deployment
+
+For live demo, kindly click on this link https://yemidada.github.io/desktop-version-portfolio/
+
 Once the dependencies are installed, you can open the `index.html` with your browser
 
 

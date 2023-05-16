@@ -23,6 +23,22 @@
                 </a></li>
         </ul>
     </nav>
+
+    <div class="popup-menu">
+        <img class="popup-close" id="popup-close-btn" src="./assets/images/popup-close-white.svg" />
+        <ul>
+            <li class="popup-menu-item">
+                <a href="#portfolio">Portfolio</a>
+            </li>
+            <li class="popup-menu-item">
+                <a href="#about">About</a>
+            </li>
+            <li class="popup-menu-item">
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+
     <section class="heading flex">
         <h1 class="heading__title fw-700">I'm Adeyemi.<br /> Glad to see you!</h1>
         <p class="heading__desc">
@@ -53,12 +69,13 @@
         <img class="image is_mobile" src="assets/images/banners/desktop_facebook.svg" alt="tonic" />
 
         <div class="content">
-            <h1 class="title">Tonic</h1>
+            <h1 class="content_title">Tonic</h1>
 
-            <p class="summary"><span>CANOPY</span><span class="dotted"></span><span class="color">Back End
+            <p class="content_summary"><span>CANOPY</span><span class="dotted"></span><span class="color">Back End
                     Dev</span><span class="dotted"></span><span class="color">2015</span></p>
 
-            <p class="desc">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+            <p class="content_desc">A daily selection of privately personalized reads; no accounts or sign-ups required.
+            </p>
 
             <ul class="tagging ul flex">
                 <li>
@@ -72,7 +89,7 @@
                 </li>
             </ul>
 
-            <a href="#" class="button-outline">See Project</a>
+            <a href="#" class="button-outline modal" data-id='0'>See Project</a>
 
         </div>
     </section>
@@ -80,12 +97,13 @@
     <section class="tonic">
         <img class="image is_mobile" src="assets/images/banners/desktop_uber.svg" alt="uber" />
         <div class="content">
-            <h1 class="title">Multi-Post Stories</h1>
+            <h1 class="content_title">Multi-Post Stories</h1>
 
-            <p class="summary"><span>FACEBOOK</span><span class="dotted"></span><span class="color">Full Stack
+            <p class="content_summary"><span>FACEBOOK</span><span class="dotted"></span><span class="color">Full Stack
                     Dev</span><span class="dotted"></span><span class="color">2015</span></p>
 
-            <p class="desc">Experimental content creation feature that allows users to add to an existing story over the
+            <p class="content_desc">Experimental content creation feature that allows users to add to an existing story
+                over the
                 course of a day without spamming their friends.</p>
 
             <ul class="tagging ul flex">
@@ -103,7 +121,7 @@
                 </li>
             </ul>
 
-            <a href="#" class="button-outline">See Project</a>
+            <a href="#" class="button-outline modal" data-id='1'>See Project</a>
 
         </div>
         <img class="image is_desktop" src="assets/images/banners/desktop_story.svg" alt="tonic" />
@@ -114,12 +132,13 @@
         <img class="image is_desktop" src="assets/images/banners/desktop_facebook.svg" alt="tonic" />
 
         <div class="content">
-            <h1 class="title">Tonic</h1>
+            <h1 class="content_title">Tonic</h1>
 
-            <p class="summary"><span>CANOPY</span><span class="dotted"></span><span class="color">Back End
+            <p class="content_summary"><span>CANOPY</span><span class="dotted"></span><span class="color">Back End
                     Dev</span><span class="dotted"></span><span class="color">2015</span></p>
 
-            <p class="desc">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+            <p class="content_desc">A daily selection of privately personalized reads; no accounts or sign-ups required.
+            </p>
 
             <ul class="tagging ul flex">
                 <li>
@@ -133,7 +152,7 @@
                 </li>
             </ul>
 
-            <a href="#" class="button-outline">See Project</a>
+            <a href="#" class="button-outline modal" data-id='2'>See Project</a>
 
         </div>
     </section>
@@ -141,12 +160,13 @@
     <section class="tonic">
         <img class="image is_mobile" src="assets/images/banners/desktop_uber.svg" alt="uber" />
         <div class="content">
-            <h1 class="title">Uber Navigation</h1>
+            <h1 class="content_title">Uber Navigation</h1>
 
-            <p class="summary"><span>Uber</span><span class="dotted"></span><span class="color">Lead
+            <p class="content_summary"><span>Uber</span><span class="dotted"></span><span class="color">Lead
                     Developer</span><span class="dotted"></span><span class="color">2015</span></p>
 
-            <p class="desc">A smart assistant to make driving more safe, efficient, and fun by unlocking your most
+            <p class="content_desc">A smart assistant to make driving more safe, efficient, and fun by unlocking your
+                most
                 expensive computer: your car.</p>
 
             <ul class="tagging ul flex">
@@ -164,7 +184,7 @@
                 </li>
             </ul>
 
-            <a href="#" class="button-outline">See Project</a>
+            <a href="#" class="button-outline modal" data-id='3'>See Project</a>
 
         </div>
         <img class="image is_desktop" src="assets/images/banners/desktop_uber.svg" alt="uber" />
@@ -263,20 +283,69 @@
         </form>
     </section>
 
-    <div class="popup-menu">
-        <img class="popup-close" id="popup-close-btn" src="./assets/images/popup-close.svg" />
-        <ul>
-            <li class="popup-menu-item">
-                <a href="#portfolio">Portfolio</a>
-            </li>
-            <li class="popup-menu-item">
-                <a href="#about">About</a>
-            </li>
-            <li class="popup-menu-item">
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
+    <div id="popup-details" class="popup-details">
+
+        <div class="content">
+            <div class="content_header">
+                <h1 class="content_title popup_title">Tonic</h1>
+                <img class="popup-close modal-close-btn" src="./assets/images/popup-close-black.svg" />
+            </div>
+
+            <p class="content_summary"><span class="popup_summary_title">Uber</span><span class="dotted"></span><span
+                    class="color popup_summary_feature">Lead
+                    Developer</span><span class="dotted"></span><span class="color popup_summary_year">2015</span></p>
+
+            <img class="image popup_img" src="assets/images/banners/desktop_facebook2.svg" alt="tonic" />
+
+            <div class="info">
+
+                <div class="content_desc popup_description">
+
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has
+                        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                        galley
+                        of
+                        type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                        also
+                        the leap into electronic typesetting, remaining essent</p>
+
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has
+                        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                        galley
+                        of
+                        type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                        also
+                        the leap into electronic typesetting, remaining essent</p>
+                </div>
+
+
+                <div class="info-addition">
+
+                    <ul class="tagging ul flex popup_tagging">
+                        
+                    </ul>
+
+                    <hr class="divider" />
+
+                    <div class="buttons">
+                        <a href="https://yemidada.github.io/desktop-version-portfolio/" class="button-outline">See Live
+                            <img src="./assets/images/see_live.svg" /></a>
+                        <a href="https://yemidada.github.io/desktop-version-portfolio/" class="button-outline">See
+                            Source <img src="./assets/images/see_source.svg" /></a>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
     </div>
+
 </body>
-<script type="text/javascript" src="./assets/script.js"></script>
+<script type="text/javascript" src="./assets/script/script.js"></script>
+
 </html>

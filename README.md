@@ -26,7 +26,7 @@
 - [📝 License](#license)
 
 
-# 📖 Portfolio - mobile menun <a name="about-project"></a>
+# 📖 Portfolio: details popup window <a name="about-project"></a>
 
 **For this project, I established a repository for my portfolio website. My objective is to develop a complete portfolio website that is responsive on both mobile and web platform.**
 
@@ -60,7 +60,7 @@ The various stacks used for the project includes the following
 - **Utilize Flexbox to position various elements on a web page.**
 - **Utilize CSS Grid to arrange different elements on a web page.**
 - **Develop a portfolio website.**
-- **Develop a mobile popup menu.**
+- **Develop a mobile popup menu and details popup window.**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 

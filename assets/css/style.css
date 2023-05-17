@@ -540,6 +540,10 @@ textarea {
   width: 24px;
 }
 
+.modal-close-btn {
+  cursor: pointer;
+}
+
 @media all and (min-width: 375px) {
   .is_mobile {
     display: block;

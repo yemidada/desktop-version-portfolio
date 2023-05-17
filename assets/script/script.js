@@ -1,5 +1,7 @@
 const mobileMenuBtn = document.querySelector('#mobile-menu-btn');
 const popupCloseBtn = document.querySelector('#popup-close-btn');
+const contactSubmitBtn = document.querySelector('#contact-submit-btn');
+const contactForm = document.querySelector('#contact-form');
 const popupMenuUl = document.querySelector('.popup-menu ul');
 const popupDetails = document.getElementsByClassName('popup-details');
 const modals = document.querySelectorAll('.modal');
@@ -12,6 +14,11 @@ const popupSummaryYear = document.querySelector('.popup_summary_year');
 const popupDescription = document.querySelector('.popup_description');
 const popupTagging = document.querySelector('.popup_tagging');
 const popupImage = document.querySelector('.popup_img');
+
+const errorMessage = document.querySelector('#error-message');
+const contactFormName = document.querySelector('.contact-form-name');
+const contactFormEmail = document.querySelector('.contact-form-email');
+const contactFormMessage = document.querySelector('.contact-form-message');
 
 const popupModal = [
   {
@@ -109,5 +116,20 @@ modals.forEach((modal) => {
 modalCloseBtn.addEventListener('click', () => {
   for (let i = 0; i < popupDetails.length; i += 1) {
     popupDetails[i].classList.remove('popup-details-active');
+  }
+});
+
+contactSubmitBtn.addEventListener('click', () => {
+  errorMessage.innerHTML = '';
+  if (contactFormName.value === '' || contactFormName.value == null) {
+    errorMessage.innerHTML = 'Please enter your name';
+  } else if (contactFormEmail.value === '' || contactFormEmail.value == null) {
+    errorMessage.innerHTML = 'Please enter your email';
+  } else if (contactFormEmail.value !== contactFormEmail.value.toLocaleLowerCase()) {
+    errorMessage.innerHTML = 'Please enter a lower case characters for the email address';
+  } else if (contactFormMessage.value === '' || contactFormMessage.value == null) {
+    errorMessage.innerHTML = 'Please enter your message';
+  } else {
+    contactForm.submit();
   }
 });

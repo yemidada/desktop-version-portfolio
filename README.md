@@ -2,7 +2,7 @@
 
 
 <div align="center">
-  <h3><b>Portfolio: details popup window</b></h3>
+  <h3><b>Portfolio: validate contact form</b></h3>
 
 </div>
 
@@ -26,18 +26,9 @@
 - [📝 License](#license)
 
 
-# 📖 Portfolio: details popup window <a name="about-project"></a>
+# 📖 Portfolio: validate contact form <a name="about-project"></a>
 
 **For this project, I established a repository for my portfolio website. My objective is to develop a complete portfolio website that is responsive on both mobile and web platform.**
-
-Mobile Modal version:
-
-![screenshot](/assets/images/modal_mobile.png)
-
-Desktop Modal version:
-
-![screenshot](/assets/images/modal_desktop.png)
-
 
 
 ## 🛠 Built With <a name="built-with"></a>

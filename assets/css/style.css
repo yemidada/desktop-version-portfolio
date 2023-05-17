@@ -519,15 +519,6 @@ textarea {
   color: #344563;
 }
 
-/* .popup-details .content .tagging {
-  margin-bottom: 0;
-  flex-wrap: wrap;
-}
-
-.popup-details .content .tagging li {
-  margin-top: 5px;
-} */
-
 .popup-details .content .info {
   display: grid;
   flex-direction: row;

@@ -544,6 +544,12 @@ textarea {
   cursor: pointer;
 }
 
+#error-message {
+  color: red;
+  text-align: center;
+  padding-top: 20px;
+}
+
 @media all and (min-width: 375px) {
   .is_mobile {
     display: block;
@@ -659,6 +665,7 @@ textarea {
   .footer .button-outline {
     justify-content: flex-start;
     flex-flow: column;
+    cursor: pointer;
   }
 
   input,

@@ -1,5 +1,7 @@
 const mobileMenuBtn = document.querySelector('#mobile-menu-btn');
 const popupCloseBtn = document.querySelector('#popup-close-btn');
+const contactSubmitBtn = document.querySelector('#contact-submit-btn');
+const contactForm = document.querySelector('#contact-form');
 const popupMenuUl = document.querySelector('.popup-menu ul');
 const popupDetails = document.getElementsByClassName('popup-details');
 const modals = document.querySelectorAll('.modal');
@@ -12,6 +14,9 @@ const popupSummaryYear = document.querySelector('.popup_summary_year');
 const popupDescription = document.querySelector('.popup_description');
 const popupTagging = document.querySelector('.popup_tagging');
 const popupImage = document.querySelector('.popup_img');
+
+const errorMessage = document.querySelector('#error-message');
+const contactFormEmail = document.querySelector('.contact-form-email');
 
 const popupModal = [
   {
@@ -109,5 +114,21 @@ modals.forEach((modal) => {
 modalCloseBtn.addEventListener('click', () => {
   for (let i = 0; i < popupDetails.length; i += 1) {
     popupDetails[i].classList.remove('popup-details-active');
+  }
+});
+
+function hasUpperCase(str) {
+  return /[A-Z]/.test(str);
+}
+contactSubmitBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  errorMessage.innerHTML = '';
+
+  hasUpperCase(contactFormEmail.value);
+  if (hasUpperCase(contactFormEmail.value)) {
+    errorMessage.innerHTML = 'Please enter lower case characters for the email address';
+  } else {
+    contactForm.submit();
+    contactForm.reset();
   }
 });

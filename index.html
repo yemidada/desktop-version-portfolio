@@ -273,13 +273,15 @@
         <p class="desc">If you have an application you are interested in developing, a feature that you need built or a
             project that needs coding. I’d love to help with it!</p>
 
-        <form action="https://formspree.io/f/xknayrnl" method="POST">
-            <input required placeholder="Name" maxlength="30" name="name" type="text" value="Lorem Ipsum" />
-            <input required placeholder="Email" name="email" type="email" value="loremipsum@gmail.com" />
-            <textarea rows="6" placeholder="Write your message here..." maxlength="500" required></textarea>
+        <form id="contact-form" action="https://formspree.io/f/xknayrnl" method="POST">
+            <input class="contact-form-name" required placeholder="Name" maxlength="30" name="name" type="text" value="Lorem Ipsum" />
+            <input class="contact-form-email" required placeholder="Email" name="email" type="email" value="loremipsum@gmail.com" />
+            <textarea class="contact-form-message"  rows="6" placeholder="Write your message here..." maxlength="500" required></textarea>
             <div class="contact-button">
-                <button class="button-outline">Get in touch</button>
+                <button id="contact-submit-btn" class="button-outline">Get in touch</button>
             </div>
+
+            <div id="error-message"></div>
         </form>
     </section>
 

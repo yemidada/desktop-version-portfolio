@@ -661,10 +661,11 @@ textarea {
     width: 100%;
     padding-left: 0.5rem;
   }
-
+  
   .footer .button-outline {
     justify-content: flex-start;
     flex-flow: column;
+    cursor: pointer;
   }
 
   input,

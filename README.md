@@ -2,7 +2,7 @@
 
 
 <div align="center">
-  <h3><b>Portfolio: validate contact form</b></h3>
+  <h3><b>Portfolio: preserve data in the browser</b></h3>
 
 </div>
 
@@ -26,7 +26,7 @@
 - [📝 License](#license)
 
 
-# 📖 Portfolio: validate contact form <a name="about-project"></a>
+# 📖 Portfolio: preserve data in the browser <a name="about-project"></a>
 
 **For this project, I established a repository for my portfolio website. My objective is to develop a complete portfolio website that is responsive on both mobile and web platform.**
 

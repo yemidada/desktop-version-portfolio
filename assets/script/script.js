@@ -117,10 +117,15 @@ modalCloseBtn.addEventListener('click', () => {
   }
 });
 
+function hasUpperCase(str) {
+  return /[A-Z]/.test(str);
+}
 contactSubmitBtn.addEventListener('click', () => {
   errorMessage.innerHTML = '';
-  if (contactFormEmail.value !== contactFormEmail.value.toLocaleLowerCase()) {
-    errorMessage.innerHTML = 'Please enter a lower case characters for the email address';
+
+  hasUpperCase(contactFormEmail.value);
+  if (hasUpperCase(contactFormEmail.value)) {
+    errorMessage.innerHTML = 'Please enter lower case characters for the email address';
   } else {
     contactForm.submit();
     contactForm.reset();

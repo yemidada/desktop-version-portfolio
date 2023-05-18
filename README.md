@@ -32,7 +32,7 @@
 
 Contact Form:
 
-![screenshot](/assets/images/contact-form.png)
+![screenshot](/assets/images/contact_form.png)
 
 
 ## 🛠 Built With <a name="built-with"></a>

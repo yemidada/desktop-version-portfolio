@@ -120,7 +120,8 @@ modalCloseBtn.addEventListener('click', () => {
 function hasUpperCase(str) {
   return /[A-Z]/.test(str);
 }
-contactSubmitBtn.addEventListener('click', () => {
+contactSubmitBtn.addEventListener('click', (e) => {
+  e.preventDefault();
   errorMessage.innerHTML = '';
 
   hasUpperCase(contactFormEmail.value);

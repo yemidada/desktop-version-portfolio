@@ -16,9 +16,7 @@ const popupTagging = document.querySelector('.popup_tagging');
 const popupImage = document.querySelector('.popup_img');
 
 const errorMessage = document.querySelector('#error-message');
-const contactFormName = document.querySelector('.contact-form-name');
 const contactFormEmail = document.querySelector('.contact-form-email');
-const contactFormMessage = document.querySelector('.contact-form-message');
 
 const popupModal = [
   {
@@ -121,15 +119,10 @@ modalCloseBtn.addEventListener('click', () => {
 
 contactSubmitBtn.addEventListener('click', () => {
   errorMessage.innerHTML = '';
-  if (contactFormName.value === '' || contactFormName.value == null) {
-    errorMessage.innerHTML = 'Please enter your name';
-  } else if (contactFormEmail.value === '' || contactFormEmail.value == null) {
-    errorMessage.innerHTML = 'Please enter your email';
-  } else if (contactFormEmail.value !== contactFormEmail.value.toLocaleLowerCase()) {
+  if (contactFormEmail.value !== contactFormEmail.value.toLocaleLowerCase()) {
     errorMessage.innerHTML = 'Please enter a lower case characters for the email address';
-  } else if (contactFormMessage.value === '' || contactFormMessage.value == null) {
-    errorMessage.innerHTML = 'Please enter your message';
   } else {
     contactForm.submit();
+    contactForm.reset();
   }
 });

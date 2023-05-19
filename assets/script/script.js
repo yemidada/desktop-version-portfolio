@@ -19,7 +19,6 @@ const errorMessage = document.querySelector('#error-message');
 const contactFormEmail = document.querySelector('.contact-form-email');
 const contactFormMessage = document.querySelector('.contact-form-message');
 const contactFormName = document.querySelector('.contact-form-name');
-const contactFormDate = document.querySelector('.contact-form-date');
 
 const contactFormStorage = 'user-form';
 
@@ -81,7 +80,6 @@ function onloadContent() {
     contactFormName.value = contactJson.name;
     contactFormEmail.value = contactJson.email;
     contactFormMessage.value = contactJson.message;
-    contactFormDate.value = contactJson.date;
   }
 }
 function hasUpperCase(str) {
@@ -145,15 +143,12 @@ const setFormChange = () => {
     name: contactFormName.value ?? '',
     email: contactFormEmail.value ?? '',
     message: contactFormMessage.value ?? '',
-    date: contactFormDate.value ?? '',
   }));
 };
 
 contactFormName.addEventListener('keypress', setFormChange);
 contactFormEmail.addEventListener('keypress', setFormChange);
 contactFormMessage.addEventListener('keypress', setFormChange);
-contactFormDate.addEventListener('keypress', setFormChange);
-contactFormDate.addEventListener('change', setFormChange);
 
 contactSubmitBtn.addEventListener('click', (e) => {
   e.preventDefault();

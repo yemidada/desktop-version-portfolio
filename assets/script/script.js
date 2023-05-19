@@ -20,7 +20,7 @@ const contactFormEmail = document.querySelector('.contact-form-email');
 const contactFormMessage = document.querySelector('.contact-form-message');
 const contactFormName = document.querySelector('.contact-form-name');
 
-const contactFormStorage = 'contact-form';
+const contactFormStorage = 'user-form';
 
 const popupModal = [
   {

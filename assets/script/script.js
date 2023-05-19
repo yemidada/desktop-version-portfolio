@@ -19,6 +19,7 @@ const errorMessage = document.querySelector('#error-message');
 const contactFormEmail = document.querySelector('.contact-form-email');
 const contactFormMessage = document.querySelector('.contact-form-message');
 const contactFormName = document.querySelector('.contact-form-name');
+const contactFormDate = document.querySelector('.contact-form-date');
 
 const contactFormStorage = 'user-form';
 
@@ -73,13 +74,14 @@ const popupModal = [
   },
 ];
 
-function onload() {
+function onloadContent() {
   const contactData = localStorage.getItem(contactFormStorage);
   if (contactData) {
     const contactJson = JSON.parse(contactData);
     contactFormName.value = contactJson.name;
     contactFormEmail.value = contactJson.email;
     contactFormMessage.value = contactJson.message;
+    contactFormDate.value = contactJson.date;
   }
 }
 function hasUpperCase(str) {
@@ -134,7 +136,24 @@ modalCloseBtn.addEventListener('click', () => {
   }
 });
 
-onload();
+document.addEventListener('DOMContentLoaded', () => {
+  onloadContent();
+});
+
+const setFormChange = () => {
+  localStorage.setItem(contactFormStorage, JSON.stringify({
+    name: contactFormName.value ?? '',
+    email: contactFormEmail.value ?? '',
+    message: contactFormMessage.value ?? '',
+    date: contactFormDate.value ?? '',
+  }));
+};
+
+contactFormName.addEventListener('keypress', setFormChange);
+contactFormEmail.addEventListener('keypress', setFormChange);
+contactFormMessage.addEventListener('keypress', setFormChange);
+contactFormDate.addEventListener('keypress', setFormChange);
+contactFormDate.addEventListener('change', setFormChange);
 
 contactSubmitBtn.addEventListener('click', (e) => {
   e.preventDefault();
@@ -144,11 +163,6 @@ contactSubmitBtn.addEventListener('click', (e) => {
   if (hasUpperCase(contactFormEmail.value)) {
     errorMessage.innerHTML = 'Please enter lower case characters for the email address';
   } else {
-    localStorage.setItem(contactFormStorage, JSON.stringify({
-      name: contactFormName.value ?? '',
-      email: contactFormEmail.value ?? '',
-      message: contactFormMessage.value ?? '',
-    }));
     contactForm.submit();
     contactForm.reset();
   }
